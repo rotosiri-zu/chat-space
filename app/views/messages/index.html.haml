@@ -1,0 +1,28 @@
+.chat
+  
+  = render 'shared/chat-side'
+  
+  .contents
+    .contents__member
+      .contents__member_current-group
+        .group-name 
+          = @group.name
+          .member-name 
+            member :
+            - @group.users.each do |group_user|
+              = group_user.name
+      = link_to edit_group_path(@group), data: {"turbolinks" => false} do
+        .button 
+          edit
+    .contents__main
+      .messages
+        = render @messages
+    .contents__form
+      .form
+        = form_for [@group, @message] do |f|
+          = f.text_field :content, class: 'contents__form__message', placeholder: 'type a message'
+          .contents__form__mask
+            = f.label :image, class: 'contents__form__mask__image' do
+              = fa_icon 'picture-o', class: 'icon'
+              = f.file_field :image, class: 'hidden'
+            = f.submit 'Send', class: 'contents__form__submit'
