@@ -60,10 +60,13 @@ body{
       height: calc(100vh - 190px);
       // float: right;
       overflow: scroll;
-      padding: 46px 40px 0;
+      //padding: 46px 40px 0;
+      //padding-top: 46px;
+      //padding-right: 40px;
+      //padding-left: 40px;
       background-color: #fafafa;
       // box-sizing: border-box; 
-      // width: 100%;
+      width: 100%;
       .message{
         min-height: 40px;
         padding-bottom: 40px;
@@ -97,6 +100,7 @@ body{
       position: fixed;
       height: 90px;
       padding: 20px 40px;
+      width:80%;
       .form{
         width: 100%;
       }
