@@ -12,6 +12,7 @@ body{
 
   .contents{
     background-color: #fafafa;
+
     float: right;
     width: calc(100% - 300px);
     &__member{
@@ -58,11 +59,15 @@ body{
       }                
     &__main{
       height: calc(100vh - 190px);
-      float: right;
+      // float: right;
       overflow: scroll;
+      // padding: 46px 40px 0;
+      padding-top: 46px;
+      padding-right: 40px;
+      padding-left: 40px;
       background-color: #fafafa;
-      box-sizing: border-box; 
-      width: 100%;
+      // box-sizing: border-box; 
+      // width: 100%;
       .message{
         min-height: 40px;
         padding-bottom: 40px;
@@ -96,7 +101,7 @@ body{
       position: fixed;
       height: 90px;
       padding: 20px 40px;
-      width:80%;
+      width: 75%;
       .form{
         width: 100%;
       }
@@ -129,6 +134,6 @@ body{
           margin-left: 18px;
           padding: 0 30px;
         }
-      }
     }
   }
+}
