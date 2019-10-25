@@ -58,14 +58,10 @@ body{
       }                
     &__main{
       height: calc(100vh - 190px);
-      // float: right;
+      float: right;
       overflow: scroll;
-      //padding: 46px 40px 0;
-      //padding-top: 46px;
-      //padding-right: 40px;
-      //padding-left: 40px;
       background-color: #fafafa;
-      // box-sizing: border-box; 
+      box-sizing: border-box; 
       width: 100%;
       .message{
         min-height: 40px;
